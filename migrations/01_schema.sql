@@ -1,4 +1,4 @@
-CREATE TABLE lightbnb;
+CREATE DATABASE lightbnb;
 \c lightbnb; 
 
 DROP TABLE IF EXISTS users CASCADE;
