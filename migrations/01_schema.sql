@@ -36,14 +36,6 @@ CREATE TABLE properties (
   active BOOLEAN NOT NULL DEFAULT TRUE
 );
 
-CREATE TABLE rates (
-  id PRIMARY KEY INTEGER,
-  start_date DATE,
-  end_date DATE,
-  cost_per_night INTEGER,
-  property_id FOREIGN KEY REFERENCES properties (id)
-)
-
 CREATE TABLE reservations (
   id PRIMARY KEY INTEGER NOT NULL,
   start_date DATE NOT NULL,
